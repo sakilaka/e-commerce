@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Category</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: white;
+        }
+
+        :root,
+        [data-theme] {
+            background-color: white !important;
+            /* color: var(--fallback-bc, oklch(var(--bc)/1)); */
+        }
+    </style>
+
+
+
+</head>
+
+<body class="bg-white">
+    <section class="ms-[134px] mt-[42px] flex">
+        <div class="flex">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M25.2 10.3218V20.2996C25.2 21.2279 24.8313 22.1181 24.1749 22.7745C23.5185 23.4309 22.6283 23.7996 21.7 23.7996H6.30005C5.37179 23.7996 4.48155 23.4309 3.82518 22.7745C3.1688 22.1181 2.80005 21.2279 2.80005 20.2996V10.3218L13.6444 16.703C13.7522 16.7665 13.875 16.8001 14 16.8001C14.1251 16.8001 14.2479 16.7665 14.3556 16.703L25.2 10.3218ZM21.7 5.59961C22.5613 5.59947 23.3923 5.91686 24.0341 6.49105C24.676 7.06523 25.0836 7.85591 25.179 8.71181L14 15.2876L2.82105 8.71181C2.91647 7.85591 3.3241 7.06523 3.96596 6.49105C4.60782 5.91686 5.43884 5.59947 6.30005 5.59961H21.7Z"
+                    fill="#70C7F2" />
+            </svg>
+
+            <p class="ms-[16px]">support@deshimart.com</p>
+        </div>
+        <div class="flex ms-10">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M13 8C13.7956 8 14.5587 8.31607 15.1213 8.87868C15.6839 9.44129 16 10.2044 16 11C16 11.2652 16.1054 11.5196 16.2929 11.7071C16.4804 11.8946 16.7348 12 17 12C17.2652 12 17.5196 11.8946 17.7071 11.7071C17.8946 11.5196 18 11.2652 18 11C18 9.67392 17.4732 8.40215 16.5355 7.46447C15.5979 6.52678 14.3261 6 13 6C12.7348 6 12.4804 6.10536 12.2929 6.29289C12.1054 6.48043 12 6.73478 12 7C12 7.26522 12.1054 7.51957 12.2929 7.70711C12.4804 7.89464 12.7348 8 13 8Z"
+                    fill="#70C7F2" />
+                <path
+                    d="M13 4C14.8565 4 16.637 4.7375 17.9497 6.05025C19.2625 7.36301 20 9.14348 20 11C20 11.2652 20.1054 11.5196 20.2929 11.7071C20.4804 11.8946 20.7348 12 21 12C21.2652 12 21.5196 11.8946 21.7071 11.7071C21.8946 11.5196 22 11.2652 22 11C22 8.61305 21.0518 6.32387 19.364 4.63604C17.6761 2.94821 15.3869 2 13 2C12.7348 2 12.4804 2.10536 12.2929 2.29289C12.1054 2.48043 12 2.73478 12 3C12 3.26522 12.1054 3.51957 12.2929 3.70711C12.4804 3.89464 12.7348 4 13 4ZM21.75 15.91C21.695 15.7495 21.6 15.6056 21.4741 15.4919C21.3481 15.3781 21.1953 15.2984 21.03 15.26L15.03 13.89C14.8671 13.8531 14.6976 13.8575 14.5369 13.9029C14.3762 13.9484 14.2294 14.0333 14.11 14.15C13.97 14.28 13.96 14.29 13.31 15.53C11.1532 14.5362 9.42499 12.8009 8.44 10.64C9.71 10 9.72 10 9.85 9.85C9.96671 9.73056 10.0516 9.58379 10.0971 9.42308C10.1425 9.26238 10.1469 9.09286 10.11 8.93L8.74 3C8.70165 2.8347 8.62186 2.68187 8.50814 2.55591C8.39443 2.42995 8.25053 2.335 8.09 2.28C7.85647 2.19659 7.61531 2.1363 7.37 2.1C7.11725 2.0414 6.85933 2.0079 6.6 2C5.38 2 4.20998 2.48464 3.34731 3.34731C2.48464 4.20998 2 5.38 2 6.6C2.00529 10.6827 3.62949 14.5967 6.5164 17.4836C9.40331 20.3705 13.3173 21.9947 17.4 22C18.0041 22 18.6022 21.881 19.1603 21.6498C19.7184 21.4187 20.2255 21.0798 20.6527 20.6527C21.0798 20.2255 21.4187 19.7184 21.6498 19.1603C21.881 18.6022 22 18.0041 22 17.4C22.0003 17.1455 21.9802 16.8913 21.94 16.64C21.898 16.3916 21.8344 16.1474 21.75 15.91Z"
+                    fill="#70C7F2" />
+            </svg>
+            <p class="ms-[16px]">01746121996</p>
+        </div>
+
+        <div class="flex text-sky-400 font-bold ms-[400px]">
+            <p>LOG IN</p>
+            <p class="ms-6">MY ACCOUNT</p>
+            <div class=" flex ms-6">
+                <p>MY CART</p>
+                <div class="indicator">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.1402 3.4375H5.15586V0.859375C5.15586 0.384742 4.77112 0 4.29649 0H0.859375C0.384742 0 0 0.384742 0 0.859375C0 1.33401 0.384742 1.71875 0.859375 1.71875H3.43711V14.2656C3.43711 14.7403 3.82186 15.125 4.29649 15.125H18.5842C18.9766 15.125 19.3191 14.8592 19.4166 14.4791L21.9727 4.5103C22.1119 3.9673 21.7012 3.4375 21.1402 3.4375ZM17.9173 13.4062H5.15586V5.15625H20.0327L17.9173 13.4062ZM6.01524 16.8438C4.59366 16.8438 3.43711 18.0003 3.43711 19.4219C3.43711 20.8435 4.59366 22 6.01524 22C7.43682 22 8.59336 20.8435 8.59336 19.4219C8.59336 18.0003 7.43682 16.8438 6.01524 16.8438ZM6.01524 20.2812C5.54138 20.2812 5.15586 19.8957 5.15586 19.4219C5.15586 18.948 5.54138 18.5625 6.01524 18.5625C6.4891 18.5625 6.87461 18.948 6.87461 19.4219C6.87461 19.8957 6.4891 20.2812 6.01524 20.2812ZM15.1715 16.8438C13.7499 16.8438 12.5934 18.0003 12.5934 19.4219C12.5934 20.8435 13.7499 22 15.1715 22C16.5931 22 17.7496 20.8435 17.7496 19.4219C17.7496 18.0003 16.5931 16.8438 15.1715 16.8438ZM15.1715 20.2812C14.6976 20.2812 14.3121 19.8957 14.3121 19.4219C14.3121 18.948 14.6976 18.5625 15.1715 18.5625C15.6454 18.5625 16.0309 18.948 16.0309 19.4219C16.0309 19.8957 15.6454 20.2812 15.1715 20.2812Z"
+                            fill="black" fill-opacity="0.97" />
+                    </svg>
+
+                    <span class="badge badge-sm indicator-item bg-red-700">8</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="m-1">
+
+    <section>
+        <div class="flex">
+            <img class="mt-[32px] ms-[146px]" src="/Assets/Group 1171274775.png" alt="">
+            <div class="flex mt-[30px]">
+                <div class="ms-[80px] mt-3 text-black flex">
+                    <p class="text-lg">Home</p>
+                    <p class="text-lg ms-[40px]">Your Window</p>
+                    <p class="text-lg ms-[40px]">Trending <img class="w-[15px] h-[21px] ms-2 inline"
+                            src="/Assets/Group 71.png" alt=""></p>
+                    <p class="text-lg ms-[40px]">shop <img class="w-[15px] h-[21px] ms-2 inline"
+                            src="/Assets/dashicons_arrow-down-alt2.png" alt=""></p>
+                    <p class="text-lg ms-[40px]">Blog</p>
+                    <p class="text-lg ms-[40px]">Contact</p>
+                </div>
+
+                <div>
+                    <button class="btn btn-error ms-14">বেচে দিন </button>
+                    <button class="btn btn-info ms-3">কুটির শিল্প </button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <div class="ms-[146px] mt-[50px]">
+        <div class="flex">
+            <p class="text-3xl text-black">Home <span class="ms-3">></span></p>
+            <p class="text-xl text-black ms-3 mt-2">New arrival <span class="ms-3">></span></p>
+        </div>
+    </div>
+
+    <section>
+        <div class="flex">
+            <div class="flex bg-slate-200 w-[246px] h-[62px] rounded-md px-4 py-2 ms-[152px] mt-[50px]">
+                <img class="w-[24px] h-[16px] mt-4" src="/Assets/Group.png" alt="">
+                <details class="dropdown ms-4">
+                    <summary class="btn bg-white">All categories<img class="ms-2"
+                            src="/Assets/dashicons_arrow-down-alt2.png" alt=""></summary>
+                    <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 2</a></li>
+                        <li><a>Item 2</a></li>
+                    </ul>
+                </details>
+            </div>
+
+            <div class="">
+                <div class="flex mt-[65px] ms-20">
+                    <img class="bg-slate-100 p-2 rounded-md" src="/Assets/Group (4).png" alt="">
+                    <img class="bg-slate-100 p-2 rounded-md ms-4" src="/Assets/heroicons-solid_menu-alt-4.png" alt="">
+                </div>
+
+                <div class="flex mt-[-45px] ms-[450px]">
+                    <p class="mt-3 text-black">Sort by :</p>
+                    <details class="dropdown ms-4">
+                        <summary class="btn bg-white">Price<img class="ms-2" src="/Assets/dashicons_arrow-down-alt2.png"
+                                alt=""></summary>
+                        <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                        </ul>
+                    </details>
+                    <img class="bg-blue-400 w-[46px] h-[46px] rounded-full p-2 ms-5" src="/Assets/Vector.png" alt="">
+                    <p class="text-sm text-black mt-3 ms-2">Found: 1000 product result</p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="ms-[135px] mt-[90px]">
+        <div class="flex">
+
+            <div class="h-[1500px] w-[300px] bg-slate-100">
+                <div class="ms-[30px] mt-8 flex justify-between">
+                    <p class="text-xl text-black">filter search</p>
+                    <img class="bg-blue-400 mr-[20px] w-[32px] h-[32px] rounded-full p-2 ms-5" src="/Assets/Vector.png"
+                        alt="">
+
+                </div>
+
+                <div class="ms-[30px] mt-8">
+                    <p>Sort by</p>
+                    <details class="dropdown text-black w-[209px] text-sm mt-4 border-b-2 pb-2 border-black">
+                        <summary class="flex justify-between">New arrival <img class=""
+                                src="/Assets/dashicons_arrow-down-alt2.png" alt="">
+                        </summary>
+
+                        <ul class="p-2 shadow menu dropdown-content z-[1] rounded-box">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                        </ul>
+                    </details>
+
+                </div>
+
+                <div class="ms-[30px] mt-8">
+                    <p>Categories</p>
+                    <details class="dropdown text-black text-sm w-[209px] mt-4 border-b-2 pb-2 border-black">
+                        <summary class="flex justify-between">Iphone<img class=""
+                                src="/Assets/dashicons_arrow-down-alt2.png" alt="">
+                        </summary>
+
+                        <ul class="p-2 shadow menu dropdown-content z-[1] rounded-box">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                        </ul>
+                    </details>
+
+                </div>
+
+                <div class="ms-[30px] mt-8">
+                    <p>Brand</p>
+                    <details class="dropdown w-[209px] text-black text-sm mt-4 border-b-2 pb-2 border-black">
+                        <summary class="flex justify-between">Apple<img class=""
+                                src="/Assets/dashicons_arrow-down-alt2.png" alt="">
+                        </summary>
+
+                        <ul class="p-2 shadow menu dropdown-content z-[1] rounded-box">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                        </ul>
+                    </details>
+
+                </div>
+
+
+
+                <div>
+                    <div id="multi-range-start-values" data-te-multi-range-slider-init data-te-start-values="[40, 80]">
+                    </div>
+                </div>
+
+                <div class="ms-[30px] mt-8">
+                    <p>color</p>
+                    <details class="dropdown w-[209px] text-black text-sm mt-4 border-b-2 pb-2 border-black">
+                        <summary class="flex justify-between">type here<img class=""
+                                src="/Assets/dashicons_arrow-down-alt2.png" alt="">
+                        </summary>
+
+                        <ul class="p-2 shadow menu dropdown-content z-[1] rounded-box">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                        </ul>
+                    </details>
+
+                </div>
+
+                <div class="ms-[30px] mt-8">
+                    <p>Size</p>
+                    <details class="dropdown w-[209px] text-black text-sm mt-4 border-b-2 pb-2 border-black">
+                        <summary class="flex justify-between">84<img class=""
+                                src="/Assets/dashicons_arrow-down-alt2.png" alt="">
+                        </summary>
+
+                        <ul class="p-2 shadow menu dropdown-content z-[1] rounded-box">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                        </ul>
+                    </details>
+
+                </div>
+                <div class="ms-[30px] mt-8">
+                    <p>Size</p>
+                    <details class="dropdown w-[209px] text-black text-sm mt-4 border-b-2 pb-2 border-black">
+                        <summary class="flex justify-between">84<img class=""
+                                src="/Assets/dashicons_arrow-down-alt2.png" alt="">
+                        </summary>
+
+                        <ul class="p-2 shadow menu dropdown-content z-[1] rounded-box">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                        </ul>
+                    </details>
+
+                </div>
+                <div class="ms-[30px] mt-8">
+                    <p>Size</p>
+                    <details class="dropdown w-[209px] text-black text-sm mt-4 border-b-2 pb-2 border-black">
+                        <summary class="flex justify-between">84<img class=""
+                                src="/Assets/dashicons_arrow-down-alt2.png" alt="">
+                        </summary>
+
+                        <ul class="p-2 shadow menu dropdown-content z-[1] rounded-box">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                        </ul>
+                    </details>
+
+                </div>
+                <div class="ms-[30px] mt-8">
+                    <p>Size</p>
+                    <details class="dropdown w-[209px] text-black text-sm mt-4 border-b-2 pb-2 border-black">
+                        <summary class="flex justify-between">84<img class=""
+                                src="/Assets/dashicons_arrow-down-alt2.png" alt="">
+                        </summary>
+
+                        <ul class="p-2 shadow menu dropdown-content z-[1] rounded-box">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                        </ul>
+                    </details>
+
+                </div>
+                <div class="ms-[30px] mt-8">
+                    <p>Size</p>
+                    <details class="dropdown w-[209px] text-black text-sm mt-4 border-b-2 pb-2 border-black">
+                        <summary class="flex justify-between">84<img class=""
+                                src="/Assets/dashicons_arrow-down-alt2.png" alt="">
+                        </summary>
+
+                        <ul class="p-2 shadow menu dropdown-content z-[1] rounded-box">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                        </ul>
+                    </details>
+
+                </div>
+
+
+                <div class="text-black ms-[30px]">
+                    <p class="text-xl mt-8">Average Ratings</p>
+                    <div class="flex mt-5 text-sm">
+                        <i class="text-amber-400 fa fa-star" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <p class="ms-2">( 05 star )</p>
+                    </div>
+                    <div class="flex mt-5 text-sm">
+                        <i class="text-amber-400 fa fa-star" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="fa fa-star ms-2" aria-hidden="true"></i>
+                        <p class="ms-2">( 04 star )</p>
+                    </div>
+                    <div class="flex mt-5 text-sm">
+                        <i class="text-amber-400 fa fa-star" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="fa fa-star ms-2" aria-hidden="true"></i>
+                        <p class="ms-2">( 03 star )</p>
+                    </div>
+                    <div class="flex mt-5 text-sm">
+                        <i class="text-amber-400 fa fa-star" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="fa fa-star ms-2" aria-hidden="true"></i>
+                        <p class="ms-2">( 02 star )</p>
+                    </div>
+                    <div class="flex mt-5 text-sm">
+                        <i class="text-amber-400 fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="fa fa-star ms-2" aria-hidden="true"></i>
+                        <p class="ms-2">( 01 star )</p>
+                    </div>
+                </div>
+
+                <div class="text-black ms-[30px]">
+                    <p class="text-xl mt-8">Product tags</p>
+                    <p class="text-sm mt-3">top selling,low range,<br>trending,Phone,<br>best seller</p>
+
+                </div>
+
+                <div class="flex mt-8 ms-[30px]">
+                    <button class="btn btn-sm btn-info">Apply filter</button>
+                    <button class="ms-3">Reset</button>
+                </div>
+
+
+
+            </div>
+
+            <div class="ms-10">
+                <div class="flex w-[717px] h-[301px] bg-slate-100 p-2">
+                    <img class="w-[205px] h-[205px] ms-10 pt-10" src="/Assets/singleCart/image 49.png" alt="">
+
+                    <div class="ms-5 pt-6">
+                        <p class="text-xl text-black">Stylish Jacket for men</p>
+                        <p class="mt-3 text-black pr-5 text-xs w-[310px]">Quality in a product or service is not what
+                            the supplier puts in. it is what the customer gets out and is willing to pay for. A product
+                            is not quality because </p>
+                        <div class="flex">
+                            <div class="mt-3 flex">
+                                <div class="text-black">
+                                    <p>color</p>
+                                    <div class="flex mt-3">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md"></div>
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md ms-3"></div>
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md ms-3"></div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-10 text-black">
+                                    <p>cloth Size</p>
+                                    <div class="flex mt-2 text-xs">
+                                        <p class="p-1 border border-slate-200">M</p>
+                                        <p class="p-1 border border-slate-200">L</p>
+                                        <p class="p-1 border border-slate-200">XL</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex mt-3">
+                            <p class="text-red-500">550tk</p>
+                            <button class="btn btn-info btn-sm ms-10">Add to Cart</button>
+                        </div>
+
+                        <div class="flex mt-3 text-black text-sm">
+                            <div class="bg-blue-400 p-2 rounded-full">
+                                <svg width="13" height="14" viewBox="0 0 9 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_686_2785)">
+                                        <path
+                                            d="M4.49999 8.4993C4.37186 8.4993 4.24834 8.45288 4.15207 8.36856C3.78849 8.05064 3.43796 7.75188 3.12869 7.48835L3.12711 7.48698C2.2204 6.71429 1.43742 6.04701 0.892637 5.38969C0.283653 4.65484 0 3.9581 0 3.19695C0 2.45744 0.253578 1.77518 0.713973 1.27579C1.17986 0.770485 1.81913 0.492188 2.51422 0.492188C3.03373 0.492188 3.50951 0.656433 3.92829 0.980324C4.13964 1.14381 4.33121 1.3439 4.49999 1.57729C4.66884 1.3439 4.86034 1.14381 5.07176 0.980324C5.49054 0.656433 5.96632 0.492188 6.48583 0.492188C7.18086 0.492188 7.82019 0.770485 8.28608 1.27579C8.74647 1.77518 8.99998 2.45744 8.99998 3.19695C8.99998 3.9581 8.7164 4.65484 8.10741 5.38962C7.56263 6.04701 6.77972 6.71423 5.87314 7.48684C5.56333 7.75079 5.21225 8.05003 4.84785 8.3687C4.75165 8.45288 4.62805 8.4993 4.49999 8.4993ZM2.51422 1.01939C1.96813 1.01939 1.46647 1.23734 1.10151 1.63312C0.731139 2.03487 0.527137 2.59023 0.527137 3.19695C0.527137 3.83711 0.765059 4.40964 1.29851 5.0533C1.81411 5.67547 2.58103 6.32902 3.46899 7.08577L3.47064 7.08714C3.78107 7.35171 4.13298 7.65163 4.49924 7.97189C4.86769 7.65102 5.22014 7.35061 5.53119 7.08563C6.41909 6.32888 7.18594 5.67547 7.70154 5.0533C8.23492 4.40964 8.47285 3.83711 8.47285 3.19695C8.47285 2.59023 8.26884 2.03487 7.89847 1.63312C7.53358 1.23734 7.03185 1.01939 6.48583 1.01939C6.0858 1.01939 5.71851 1.14656 5.39421 1.39732C5.1052 1.6209 4.90387 1.90352 4.78584 2.10127C4.72514 2.20296 4.6183 2.26366 4.49999 2.26366C4.38168 2.26366 4.27484 2.20296 4.21414 2.10127C4.09618 1.90352 3.89485 1.6209 3.60577 1.39732C3.28147 1.14656 2.91419 1.01939 2.51422 1.01939Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_686_2785">
+                                            <rect width="9" height="9" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Add to wishlist</p>
+                            <div class="ms-1 bg-blue-400 p-2 rounded-full">
+                                <svg class="" width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.5141 6.39483C11.7709 6.75649 11.7709 7.24474 11.5141 7.60583C10.7054 8.74274 8.76515 11.0837 6.4999 11.0837C4.23465 11.0837 2.2944 8.74274 1.4857 7.60583C1.36078 7.43265 1.29297 7.21961 1.29297 7.00033C1.29297 6.78104 1.36078 6.568 1.4857 6.39483C2.2944 5.25791 4.23465 2.91699 6.4999 2.91699C8.76515 2.91699 10.7054 5.25791 11.5141 6.39483V6.39483Z"
+                                        stroke="white" stroke-width="1.29475" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M6.5 8.75C7.39746 8.75 8.125 7.9665 8.125 7C8.125 6.0335 7.39746 5.25 6.5 5.25C5.60254 5.25 4.875 6.0335 4.875 7C4.875 7.9665 5.60254 8.75 6.5 8.75Z"
+                                        stroke="white" stroke-width="1.29475" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Quick view</p>
+                            <div class="ms-1 bg-blue-400 p-2 rounded-full">
+                                <svg width="13" height="14" viewBox="0 0 9 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_686_2765)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.40625 6.5625C7.2322 6.5625 7.06528 6.63164 6.94221 6.75471C6.81914 6.87778 6.75 7.0447 6.75 7.21875C6.75 7.3928 6.81914 7.55972 6.94221 7.68279C7.06528 7.80586 7.2322 7.875 7.40625 7.875C7.5803 7.875 7.74722 7.80586 7.87029 7.68279C7.99336 7.55972 8.0625 7.3928 8.0625 7.21875C8.0625 7.0447 7.99336 6.87778 7.87029 6.75471C7.74722 6.63164 7.5803 6.5625 7.40625 6.5625ZM6.1875 7.21875C6.1875 6.89552 6.3159 6.58552 6.54446 6.35696C6.77302 6.1284 7.08302 6 7.40625 6C7.72948 6 8.03948 6.1284 8.26804 6.35696C8.4966 6.58552 8.625 6.89552 8.625 7.21875C8.625 7.54198 8.4966 7.85198 8.26804 8.08054C8.03948 8.3091 7.72948 8.4375 7.40625 8.4375C7.08302 8.4375 6.77302 8.3091 6.54446 8.08054C6.3159 7.85198 6.1875 7.54198 6.1875 7.21875Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.21437 0.645C5.26704 0.697735 5.29663 0.769219 5.29663 0.84375C5.29663 0.918281 5.26704 0.989765 5.21437 1.0425L4.75687 1.5H6.28125C6.65421 1.5 7.0119 1.64816 7.27562 1.91188C7.53934 2.1756 7.6875 2.53329 7.6875 2.90625V6.1875C7.6875 6.26209 7.65787 6.33363 7.60512 6.38637C7.55238 6.43912 7.48084 6.46875 7.40625 6.46875C7.33166 6.46875 7.26012 6.43912 7.20738 6.38637C7.15463 6.33363 7.125 6.26209 7.125 6.1875V2.90625C7.125 2.79545 7.10318 2.68573 7.06077 2.58336C7.01837 2.48099 6.95622 2.38798 6.87787 2.30963C6.79952 2.23128 6.70651 2.16913 6.60414 2.12673C6.50177 2.08432 6.39205 2.0625 6.28125 2.0625H4.75725L5.21475 2.52C5.26596 2.57307 5.29427 2.64413 5.2936 2.71787C5.29292 2.79161 5.26331 2.86214 5.21114 2.91426C5.15897 2.96638 5.08841 2.99593 5.01467 2.99653C4.94093 2.99714 4.86989 2.96876 4.81687 2.9175L3.87937 1.98C3.82671 1.92727 3.79712 1.85578 3.79712 1.78125C3.79712 1.70672 3.82671 1.63523 3.87937 1.5825L4.81687 0.645C4.86961 0.592331 4.94109 0.562747 5.01562 0.562747C5.09016 0.562747 5.16164 0.592331 5.21437 0.645ZM1.59375 2.4375C1.67993 2.4375 1.76527 2.42053 1.84489 2.38755C1.92451 2.35457 1.99685 2.30623 2.05779 2.24529C2.11873 2.18435 2.16707 2.11201 2.20005 2.03239C2.23303 1.95277 2.25 1.86743 2.25 1.78125C2.25 1.69507 2.23303 1.60973 2.20005 1.53011C2.16707 1.45049 2.11873 1.37815 2.05779 1.31721C1.99685 1.25627 1.92451 1.20793 1.84489 1.17495C1.76527 1.14197 1.67993 1.125 1.59375 1.125C1.4197 1.125 1.25278 1.19414 1.12971 1.31721C1.00664 1.44028 0.9375 1.6072 0.9375 1.78125C0.9375 1.9553 1.00664 2.12222 1.12971 2.24529C1.25278 2.36836 1.4197 2.4375 1.59375 2.4375ZM2.8125 1.78125C2.8125 2.10448 2.6841 2.41448 2.45554 2.64304C2.22698 2.8716 1.91698 3 1.59375 3C1.27052 3 0.960523 2.8716 0.731964 2.64304C0.503404 2.41448 0.375 2.10448 0.375 1.78125C0.375 1.45802 0.503404 1.14802 0.731964 0.919464C0.960523 0.690904 1.27052 0.5625 1.59375 0.5625C1.91698 0.5625 2.22698 0.690904 2.45554 0.919464C2.6841 1.14802 2.8125 1.45802 2.8125 1.78125Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.78563 8.355C3.73296 8.30227 3.70337 8.23078 3.70337 8.15625C3.70337 8.08172 3.73296 8.01023 3.78563 7.9575L4.24313 7.5H2.71875C2.34579 7.5 1.9881 7.35184 1.72438 7.08812C1.46066 6.8244 1.3125 6.46671 1.3125 6.09375V2.8125C1.3125 2.73791 1.34213 2.66637 1.39488 2.61363C1.44762 2.56088 1.51916 2.53125 1.59375 2.53125C1.66834 2.53125 1.73988 2.56088 1.79262 2.61363C1.84537 2.66637 1.875 2.73791 1.875 2.8125V6.09375C1.875 6.31753 1.9639 6.53214 2.12213 6.69037C2.28036 6.84861 2.49497 6.9375 2.71875 6.9375H4.24275L3.78525 6.48C3.7584 6.45404 3.73699 6.423 3.72227 6.38868C3.70754 6.35436 3.6998 6.31745 3.69949 6.2801C3.69919 6.24276 3.70632 6.20573 3.72048 6.17117C3.73464 6.13661 3.75554 6.10522 3.78195 6.07883C3.80837 6.05243 3.83979 6.03156 3.87436 6.01744C3.90893 6.00331 3.94597 5.99621 3.98331 5.99656C4.02065 5.9969 4.05756 6.00467 4.09186 6.01943C4.12617 6.03419 4.15719 6.05563 4.18313 6.0825L5.12063 7.02C5.17329 7.07273 5.20288 7.14422 5.20288 7.21875C5.20288 7.29328 5.17329 7.36477 5.12063 7.4175L4.18313 8.355C4.13039 8.40767 4.05891 8.43725 3.98438 8.43725C3.90984 8.43725 3.83836 8.40767 3.78563 8.355Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_686_2765">
+                                            <rect width="9" height="9" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Compare</p>
+                            
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="flex w-[717px] mt-5 h-[301px] bg-slate-100">
+                    <img class="w-[205px] h-[205px] ms-10 pt-10" src="/Assets/singleCart/image 49.png" alt="">
+
+                    <div class="ms-5 pt-6">
+                        <p class="text-xl text-black">Stylish Jacket for men</p>
+                        <p class="mt-3 text-black pr-5 text-xs w-[310px]">Quality in a product or service is not what
+                            the supplier puts in. it is what the customer gets out and is willing to pay for. A product
+                            is not quality because </p>
+                        <div class="flex">
+                            <div class="mt-3 flex">
+                                <div class="text-black">
+                                    <p>color</p>
+                                    <div class="flex mt-3">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md"></div>
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md ms-3"></div>
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md ms-3"></div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-10 text-black">
+                                    <p>cloth Size</p>
+                                    <div class="flex mt-2 text-xs">
+                                        <p class="p-1 border border-slate-200">M</p>
+                                        <p class="p-1 border border-slate-200">L</p>
+                                        <p class="p-1 border border-slate-200">XL</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex mt-3">
+                            <p class="text-red-500">550tk</p>
+                            <button class="btn btn-info btn-sm ms-10">Add to Cart</button>
+                        </div>
+
+                        <div class="flex mt-3 text-black text-sm">
+                            <div class="bg-blue-400 p-2 rounded-full">
+                                <svg width="13" height="14" viewBox="0 0 9 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_686_2785)">
+                                        <path
+                                            d="M4.49999 8.4993C4.37186 8.4993 4.24834 8.45288 4.15207 8.36856C3.78849 8.05064 3.43796 7.75188 3.12869 7.48835L3.12711 7.48698C2.2204 6.71429 1.43742 6.04701 0.892637 5.38969C0.283653 4.65484 0 3.9581 0 3.19695C0 2.45744 0.253578 1.77518 0.713973 1.27579C1.17986 0.770485 1.81913 0.492188 2.51422 0.492188C3.03373 0.492188 3.50951 0.656433 3.92829 0.980324C4.13964 1.14381 4.33121 1.3439 4.49999 1.57729C4.66884 1.3439 4.86034 1.14381 5.07176 0.980324C5.49054 0.656433 5.96632 0.492188 6.48583 0.492188C7.18086 0.492188 7.82019 0.770485 8.28608 1.27579C8.74647 1.77518 8.99998 2.45744 8.99998 3.19695C8.99998 3.9581 8.7164 4.65484 8.10741 5.38962C7.56263 6.04701 6.77972 6.71423 5.87314 7.48684C5.56333 7.75079 5.21225 8.05003 4.84785 8.3687C4.75165 8.45288 4.62805 8.4993 4.49999 8.4993ZM2.51422 1.01939C1.96813 1.01939 1.46647 1.23734 1.10151 1.63312C0.731139 2.03487 0.527137 2.59023 0.527137 3.19695C0.527137 3.83711 0.765059 4.40964 1.29851 5.0533C1.81411 5.67547 2.58103 6.32902 3.46899 7.08577L3.47064 7.08714C3.78107 7.35171 4.13298 7.65163 4.49924 7.97189C4.86769 7.65102 5.22014 7.35061 5.53119 7.08563C6.41909 6.32888 7.18594 5.67547 7.70154 5.0533C8.23492 4.40964 8.47285 3.83711 8.47285 3.19695C8.47285 2.59023 8.26884 2.03487 7.89847 1.63312C7.53358 1.23734 7.03185 1.01939 6.48583 1.01939C6.0858 1.01939 5.71851 1.14656 5.39421 1.39732C5.1052 1.6209 4.90387 1.90352 4.78584 2.10127C4.72514 2.20296 4.6183 2.26366 4.49999 2.26366C4.38168 2.26366 4.27484 2.20296 4.21414 2.10127C4.09618 1.90352 3.89485 1.6209 3.60577 1.39732C3.28147 1.14656 2.91419 1.01939 2.51422 1.01939Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_686_2785">
+                                            <rect width="9" height="9" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Add to wishlist</p>
+                            <div class="ms-1 bg-blue-400 p-2 rounded-full">
+                                <svg class="" width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.5141 6.39483C11.7709 6.75649 11.7709 7.24474 11.5141 7.60583C10.7054 8.74274 8.76515 11.0837 6.4999 11.0837C4.23465 11.0837 2.2944 8.74274 1.4857 7.60583C1.36078 7.43265 1.29297 7.21961 1.29297 7.00033C1.29297 6.78104 1.36078 6.568 1.4857 6.39483C2.2944 5.25791 4.23465 2.91699 6.4999 2.91699C8.76515 2.91699 10.7054 5.25791 11.5141 6.39483V6.39483Z"
+                                        stroke="white" stroke-width="1.29475" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M6.5 8.75C7.39746 8.75 8.125 7.9665 8.125 7C8.125 6.0335 7.39746 5.25 6.5 5.25C5.60254 5.25 4.875 6.0335 4.875 7C4.875 7.9665 5.60254 8.75 6.5 8.75Z"
+                                        stroke="white" stroke-width="1.29475" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Quick view</p>
+                            <div class="ms-1 bg-blue-400 p-2 rounded-full">
+                                <svg width="13" height="14" viewBox="0 0 9 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_686_2765)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.40625 6.5625C7.2322 6.5625 7.06528 6.63164 6.94221 6.75471C6.81914 6.87778 6.75 7.0447 6.75 7.21875C6.75 7.3928 6.81914 7.55972 6.94221 7.68279C7.06528 7.80586 7.2322 7.875 7.40625 7.875C7.5803 7.875 7.74722 7.80586 7.87029 7.68279C7.99336 7.55972 8.0625 7.3928 8.0625 7.21875C8.0625 7.0447 7.99336 6.87778 7.87029 6.75471C7.74722 6.63164 7.5803 6.5625 7.40625 6.5625ZM6.1875 7.21875C6.1875 6.89552 6.3159 6.58552 6.54446 6.35696C6.77302 6.1284 7.08302 6 7.40625 6C7.72948 6 8.03948 6.1284 8.26804 6.35696C8.4966 6.58552 8.625 6.89552 8.625 7.21875C8.625 7.54198 8.4966 7.85198 8.26804 8.08054C8.03948 8.3091 7.72948 8.4375 7.40625 8.4375C7.08302 8.4375 6.77302 8.3091 6.54446 8.08054C6.3159 7.85198 6.1875 7.54198 6.1875 7.21875Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.21437 0.645C5.26704 0.697735 5.29663 0.769219 5.29663 0.84375C5.29663 0.918281 5.26704 0.989765 5.21437 1.0425L4.75687 1.5H6.28125C6.65421 1.5 7.0119 1.64816 7.27562 1.91188C7.53934 2.1756 7.6875 2.53329 7.6875 2.90625V6.1875C7.6875 6.26209 7.65787 6.33363 7.60512 6.38637C7.55238 6.43912 7.48084 6.46875 7.40625 6.46875C7.33166 6.46875 7.26012 6.43912 7.20738 6.38637C7.15463 6.33363 7.125 6.26209 7.125 6.1875V2.90625C7.125 2.79545 7.10318 2.68573 7.06077 2.58336C7.01837 2.48099 6.95622 2.38798 6.87787 2.30963C6.79952 2.23128 6.70651 2.16913 6.60414 2.12673C6.50177 2.08432 6.39205 2.0625 6.28125 2.0625H4.75725L5.21475 2.52C5.26596 2.57307 5.29427 2.64413 5.2936 2.71787C5.29292 2.79161 5.26331 2.86214 5.21114 2.91426C5.15897 2.96638 5.08841 2.99593 5.01467 2.99653C4.94093 2.99714 4.86989 2.96876 4.81687 2.9175L3.87937 1.98C3.82671 1.92727 3.79712 1.85578 3.79712 1.78125C3.79712 1.70672 3.82671 1.63523 3.87937 1.5825L4.81687 0.645C4.86961 0.592331 4.94109 0.562747 5.01562 0.562747C5.09016 0.562747 5.16164 0.592331 5.21437 0.645ZM1.59375 2.4375C1.67993 2.4375 1.76527 2.42053 1.84489 2.38755C1.92451 2.35457 1.99685 2.30623 2.05779 2.24529C2.11873 2.18435 2.16707 2.11201 2.20005 2.03239C2.23303 1.95277 2.25 1.86743 2.25 1.78125C2.25 1.69507 2.23303 1.60973 2.20005 1.53011C2.16707 1.45049 2.11873 1.37815 2.05779 1.31721C1.99685 1.25627 1.92451 1.20793 1.84489 1.17495C1.76527 1.14197 1.67993 1.125 1.59375 1.125C1.4197 1.125 1.25278 1.19414 1.12971 1.31721C1.00664 1.44028 0.9375 1.6072 0.9375 1.78125C0.9375 1.9553 1.00664 2.12222 1.12971 2.24529C1.25278 2.36836 1.4197 2.4375 1.59375 2.4375ZM2.8125 1.78125C2.8125 2.10448 2.6841 2.41448 2.45554 2.64304C2.22698 2.8716 1.91698 3 1.59375 3C1.27052 3 0.960523 2.8716 0.731964 2.64304C0.503404 2.41448 0.375 2.10448 0.375 1.78125C0.375 1.45802 0.503404 1.14802 0.731964 0.919464C0.960523 0.690904 1.27052 0.5625 1.59375 0.5625C1.91698 0.5625 2.22698 0.690904 2.45554 0.919464C2.6841 1.14802 2.8125 1.45802 2.8125 1.78125Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.78563 8.355C3.73296 8.30227 3.70337 8.23078 3.70337 8.15625C3.70337 8.08172 3.73296 8.01023 3.78563 7.9575L4.24313 7.5H2.71875C2.34579 7.5 1.9881 7.35184 1.72438 7.08812C1.46066 6.8244 1.3125 6.46671 1.3125 6.09375V2.8125C1.3125 2.73791 1.34213 2.66637 1.39488 2.61363C1.44762 2.56088 1.51916 2.53125 1.59375 2.53125C1.66834 2.53125 1.73988 2.56088 1.79262 2.61363C1.84537 2.66637 1.875 2.73791 1.875 2.8125V6.09375C1.875 6.31753 1.9639 6.53214 2.12213 6.69037C2.28036 6.84861 2.49497 6.9375 2.71875 6.9375H4.24275L3.78525 6.48C3.7584 6.45404 3.73699 6.423 3.72227 6.38868C3.70754 6.35436 3.6998 6.31745 3.69949 6.2801C3.69919 6.24276 3.70632 6.20573 3.72048 6.17117C3.73464 6.13661 3.75554 6.10522 3.78195 6.07883C3.80837 6.05243 3.83979 6.03156 3.87436 6.01744C3.90893 6.00331 3.94597 5.99621 3.98331 5.99656C4.02065 5.9969 4.05756 6.00467 4.09186 6.01943C4.12617 6.03419 4.15719 6.05563 4.18313 6.0825L5.12063 7.02C5.17329 7.07273 5.20288 7.14422 5.20288 7.21875C5.20288 7.29328 5.17329 7.36477 5.12063 7.4175L4.18313 8.355C4.13039 8.40767 4.05891 8.43725 3.98438 8.43725C3.90984 8.43725 3.83836 8.40767 3.78563 8.355Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_686_2765">
+                                            <rect width="9" height="9" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Compare</p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="flex w-[717px] mt-5 h-[301px] bg-slate-100">
+                    <img class="w-[205px] h-[205px] ms-10 pt-10" src="/Assets/singleCart/image 49.png" alt="">
+
+                    <div class="ms-5 pt-6">
+                        <p class="text-xl text-black">Stylish Jacket for men</p>
+                        <p class="mt-3 text-black pr-5 text-xs w-[310px]">Quality in a product or service is not what
+                            the supplier puts in. it is what the customer gets out and is willing to pay for. A product
+                            is not quality because </p>
+                        <div class="flex">
+                            <div class="mt-3 flex">
+                                <div class="text-black">
+                                    <p>color</p>
+                                    <div class="flex mt-3">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md"></div>
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md ms-3"></div>
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md ms-3"></div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-10 text-black">
+                                    <p>cloth Size</p>
+                                    <div class="flex mt-2 text-xs">
+                                        <p class="p-1 border border-slate-200">M</p>
+                                        <p class="p-1 border border-slate-200">L</p>
+                                        <p class="p-1 border border-slate-200">XL</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex mt-3">
+                            <p class="text-red-500">550tk</p>
+                            <button class="btn btn-info btn-sm ms-10">Add to Cart</button>
+                        </div>
+
+                        <div class="flex mt-3 text-black text-sm">
+                            <div class="bg-blue-400 p-2 rounded-full">
+                                <svg width="13" height="14" viewBox="0 0 9 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_686_2785)">
+                                        <path
+                                            d="M4.49999 8.4993C4.37186 8.4993 4.24834 8.45288 4.15207 8.36856C3.78849 8.05064 3.43796 7.75188 3.12869 7.48835L3.12711 7.48698C2.2204 6.71429 1.43742 6.04701 0.892637 5.38969C0.283653 4.65484 0 3.9581 0 3.19695C0 2.45744 0.253578 1.77518 0.713973 1.27579C1.17986 0.770485 1.81913 0.492188 2.51422 0.492188C3.03373 0.492188 3.50951 0.656433 3.92829 0.980324C4.13964 1.14381 4.33121 1.3439 4.49999 1.57729C4.66884 1.3439 4.86034 1.14381 5.07176 0.980324C5.49054 0.656433 5.96632 0.492188 6.48583 0.492188C7.18086 0.492188 7.82019 0.770485 8.28608 1.27579C8.74647 1.77518 8.99998 2.45744 8.99998 3.19695C8.99998 3.9581 8.7164 4.65484 8.10741 5.38962C7.56263 6.04701 6.77972 6.71423 5.87314 7.48684C5.56333 7.75079 5.21225 8.05003 4.84785 8.3687C4.75165 8.45288 4.62805 8.4993 4.49999 8.4993ZM2.51422 1.01939C1.96813 1.01939 1.46647 1.23734 1.10151 1.63312C0.731139 2.03487 0.527137 2.59023 0.527137 3.19695C0.527137 3.83711 0.765059 4.40964 1.29851 5.0533C1.81411 5.67547 2.58103 6.32902 3.46899 7.08577L3.47064 7.08714C3.78107 7.35171 4.13298 7.65163 4.49924 7.97189C4.86769 7.65102 5.22014 7.35061 5.53119 7.08563C6.41909 6.32888 7.18594 5.67547 7.70154 5.0533C8.23492 4.40964 8.47285 3.83711 8.47285 3.19695C8.47285 2.59023 8.26884 2.03487 7.89847 1.63312C7.53358 1.23734 7.03185 1.01939 6.48583 1.01939C6.0858 1.01939 5.71851 1.14656 5.39421 1.39732C5.1052 1.6209 4.90387 1.90352 4.78584 2.10127C4.72514 2.20296 4.6183 2.26366 4.49999 2.26366C4.38168 2.26366 4.27484 2.20296 4.21414 2.10127C4.09618 1.90352 3.89485 1.6209 3.60577 1.39732C3.28147 1.14656 2.91419 1.01939 2.51422 1.01939Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_686_2785">
+                                            <rect width="9" height="9" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Add to wishlist</p>
+                            <div class="ms-1 bg-blue-400 p-2 rounded-full">
+                                <svg class="" width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.5141 6.39483C11.7709 6.75649 11.7709 7.24474 11.5141 7.60583C10.7054 8.74274 8.76515 11.0837 6.4999 11.0837C4.23465 11.0837 2.2944 8.74274 1.4857 7.60583C1.36078 7.43265 1.29297 7.21961 1.29297 7.00033C1.29297 6.78104 1.36078 6.568 1.4857 6.39483C2.2944 5.25791 4.23465 2.91699 6.4999 2.91699C8.76515 2.91699 10.7054 5.25791 11.5141 6.39483V6.39483Z"
+                                        stroke="white" stroke-width="1.29475" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M6.5 8.75C7.39746 8.75 8.125 7.9665 8.125 7C8.125 6.0335 7.39746 5.25 6.5 5.25C5.60254 5.25 4.875 6.0335 4.875 7C4.875 7.9665 5.60254 8.75 6.5 8.75Z"
+                                        stroke="white" stroke-width="1.29475" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Quick view</p>
+                            <div class="ms-1 bg-blue-400 p-2 rounded-full">
+                                <svg width="13" height="14" viewBox="0 0 9 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_686_2765)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.40625 6.5625C7.2322 6.5625 7.06528 6.63164 6.94221 6.75471C6.81914 6.87778 6.75 7.0447 6.75 7.21875C6.75 7.3928 6.81914 7.55972 6.94221 7.68279C7.06528 7.80586 7.2322 7.875 7.40625 7.875C7.5803 7.875 7.74722 7.80586 7.87029 7.68279C7.99336 7.55972 8.0625 7.3928 8.0625 7.21875C8.0625 7.0447 7.99336 6.87778 7.87029 6.75471C7.74722 6.63164 7.5803 6.5625 7.40625 6.5625ZM6.1875 7.21875C6.1875 6.89552 6.3159 6.58552 6.54446 6.35696C6.77302 6.1284 7.08302 6 7.40625 6C7.72948 6 8.03948 6.1284 8.26804 6.35696C8.4966 6.58552 8.625 6.89552 8.625 7.21875C8.625 7.54198 8.4966 7.85198 8.26804 8.08054C8.03948 8.3091 7.72948 8.4375 7.40625 8.4375C7.08302 8.4375 6.77302 8.3091 6.54446 8.08054C6.3159 7.85198 6.1875 7.54198 6.1875 7.21875Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.21437 0.645C5.26704 0.697735 5.29663 0.769219 5.29663 0.84375C5.29663 0.918281 5.26704 0.989765 5.21437 1.0425L4.75687 1.5H6.28125C6.65421 1.5 7.0119 1.64816 7.27562 1.91188C7.53934 2.1756 7.6875 2.53329 7.6875 2.90625V6.1875C7.6875 6.26209 7.65787 6.33363 7.60512 6.38637C7.55238 6.43912 7.48084 6.46875 7.40625 6.46875C7.33166 6.46875 7.26012 6.43912 7.20738 6.38637C7.15463 6.33363 7.125 6.26209 7.125 6.1875V2.90625C7.125 2.79545 7.10318 2.68573 7.06077 2.58336C7.01837 2.48099 6.95622 2.38798 6.87787 2.30963C6.79952 2.23128 6.70651 2.16913 6.60414 2.12673C6.50177 2.08432 6.39205 2.0625 6.28125 2.0625H4.75725L5.21475 2.52C5.26596 2.57307 5.29427 2.64413 5.2936 2.71787C5.29292 2.79161 5.26331 2.86214 5.21114 2.91426C5.15897 2.96638 5.08841 2.99593 5.01467 2.99653C4.94093 2.99714 4.86989 2.96876 4.81687 2.9175L3.87937 1.98C3.82671 1.92727 3.79712 1.85578 3.79712 1.78125C3.79712 1.70672 3.82671 1.63523 3.87937 1.5825L4.81687 0.645C4.86961 0.592331 4.94109 0.562747 5.01562 0.562747C5.09016 0.562747 5.16164 0.592331 5.21437 0.645ZM1.59375 2.4375C1.67993 2.4375 1.76527 2.42053 1.84489 2.38755C1.92451 2.35457 1.99685 2.30623 2.05779 2.24529C2.11873 2.18435 2.16707 2.11201 2.20005 2.03239C2.23303 1.95277 2.25 1.86743 2.25 1.78125C2.25 1.69507 2.23303 1.60973 2.20005 1.53011C2.16707 1.45049 2.11873 1.37815 2.05779 1.31721C1.99685 1.25627 1.92451 1.20793 1.84489 1.17495C1.76527 1.14197 1.67993 1.125 1.59375 1.125C1.4197 1.125 1.25278 1.19414 1.12971 1.31721C1.00664 1.44028 0.9375 1.6072 0.9375 1.78125C0.9375 1.9553 1.00664 2.12222 1.12971 2.24529C1.25278 2.36836 1.4197 2.4375 1.59375 2.4375ZM2.8125 1.78125C2.8125 2.10448 2.6841 2.41448 2.45554 2.64304C2.22698 2.8716 1.91698 3 1.59375 3C1.27052 3 0.960523 2.8716 0.731964 2.64304C0.503404 2.41448 0.375 2.10448 0.375 1.78125C0.375 1.45802 0.503404 1.14802 0.731964 0.919464C0.960523 0.690904 1.27052 0.5625 1.59375 0.5625C1.91698 0.5625 2.22698 0.690904 2.45554 0.919464C2.6841 1.14802 2.8125 1.45802 2.8125 1.78125Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.78563 8.355C3.73296 8.30227 3.70337 8.23078 3.70337 8.15625C3.70337 8.08172 3.73296 8.01023 3.78563 7.9575L4.24313 7.5H2.71875C2.34579 7.5 1.9881 7.35184 1.72438 7.08812C1.46066 6.8244 1.3125 6.46671 1.3125 6.09375V2.8125C1.3125 2.73791 1.34213 2.66637 1.39488 2.61363C1.44762 2.56088 1.51916 2.53125 1.59375 2.53125C1.66834 2.53125 1.73988 2.56088 1.79262 2.61363C1.84537 2.66637 1.875 2.73791 1.875 2.8125V6.09375C1.875 6.31753 1.9639 6.53214 2.12213 6.69037C2.28036 6.84861 2.49497 6.9375 2.71875 6.9375H4.24275L3.78525 6.48C3.7584 6.45404 3.73699 6.423 3.72227 6.38868C3.70754 6.35436 3.6998 6.31745 3.69949 6.2801C3.69919 6.24276 3.70632 6.20573 3.72048 6.17117C3.73464 6.13661 3.75554 6.10522 3.78195 6.07883C3.80837 6.05243 3.83979 6.03156 3.87436 6.01744C3.90893 6.00331 3.94597 5.99621 3.98331 5.99656C4.02065 5.9969 4.05756 6.00467 4.09186 6.01943C4.12617 6.03419 4.15719 6.05563 4.18313 6.0825L5.12063 7.02C5.17329 7.07273 5.20288 7.14422 5.20288 7.21875C5.20288 7.29328 5.17329 7.36477 5.12063 7.4175L4.18313 8.355C4.13039 8.40767 4.05891 8.43725 3.98438 8.43725C3.90984 8.43725 3.83836 8.40767 3.78563 8.355Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_686_2765">
+                                            <rect width="9" height="9" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Compare</p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="flex w-[717px] mt-5 h-[301px] bg-slate-100">
+                    <img class="w-[205px] h-[205px] ms-10 pt-10" src="/Assets/singleCart/image 49.png" alt="">
+
+                    <div class="ms-5 pt-6">
+                        <p class="text-xl text-black">Stylish Jacket for men</p>
+                        <p class="mt-3 text-black pr-5 text-xs w-[310px]">Quality in a product or service is not what
+                            the supplier puts in. it is what the customer gets out and is willing to pay for. A product
+                            is not quality because </p>
+                        <div class="flex">
+                            <div class="mt-3 flex">
+                                <div class="text-black">
+                                    <p>color</p>
+                                    <div class="flex mt-3">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md"></div>
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md ms-3"></div>
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md ms-3"></div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-10 text-black">
+                                    <p>cloth Size</p>
+                                    <div class="flex mt-2 text-xs">
+                                        <p class="p-1 border border-slate-200">M</p>
+                                        <p class="p-1 border border-slate-200">L</p>
+                                        <p class="p-1 border border-slate-200">XL</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex mt-3">
+                            <p class="text-red-500">550tk</p>
+                            <button class="btn btn-info btn-sm ms-10">Add to Cart</button>
+                        </div>
+
+                        <div class="flex mt-3 text-black text-sm">
+                            <div class="bg-blue-400 p-2 rounded-full">
+                                <svg width="13" height="14" viewBox="0 0 9 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_686_2785)">
+                                        <path
+                                            d="M4.49999 8.4993C4.37186 8.4993 4.24834 8.45288 4.15207 8.36856C3.78849 8.05064 3.43796 7.75188 3.12869 7.48835L3.12711 7.48698C2.2204 6.71429 1.43742 6.04701 0.892637 5.38969C0.283653 4.65484 0 3.9581 0 3.19695C0 2.45744 0.253578 1.77518 0.713973 1.27579C1.17986 0.770485 1.81913 0.492188 2.51422 0.492188C3.03373 0.492188 3.50951 0.656433 3.92829 0.980324C4.13964 1.14381 4.33121 1.3439 4.49999 1.57729C4.66884 1.3439 4.86034 1.14381 5.07176 0.980324C5.49054 0.656433 5.96632 0.492188 6.48583 0.492188C7.18086 0.492188 7.82019 0.770485 8.28608 1.27579C8.74647 1.77518 8.99998 2.45744 8.99998 3.19695C8.99998 3.9581 8.7164 4.65484 8.10741 5.38962C7.56263 6.04701 6.77972 6.71423 5.87314 7.48684C5.56333 7.75079 5.21225 8.05003 4.84785 8.3687C4.75165 8.45288 4.62805 8.4993 4.49999 8.4993ZM2.51422 1.01939C1.96813 1.01939 1.46647 1.23734 1.10151 1.63312C0.731139 2.03487 0.527137 2.59023 0.527137 3.19695C0.527137 3.83711 0.765059 4.40964 1.29851 5.0533C1.81411 5.67547 2.58103 6.32902 3.46899 7.08577L3.47064 7.08714C3.78107 7.35171 4.13298 7.65163 4.49924 7.97189C4.86769 7.65102 5.22014 7.35061 5.53119 7.08563C6.41909 6.32888 7.18594 5.67547 7.70154 5.0533C8.23492 4.40964 8.47285 3.83711 8.47285 3.19695C8.47285 2.59023 8.26884 2.03487 7.89847 1.63312C7.53358 1.23734 7.03185 1.01939 6.48583 1.01939C6.0858 1.01939 5.71851 1.14656 5.39421 1.39732C5.1052 1.6209 4.90387 1.90352 4.78584 2.10127C4.72514 2.20296 4.6183 2.26366 4.49999 2.26366C4.38168 2.26366 4.27484 2.20296 4.21414 2.10127C4.09618 1.90352 3.89485 1.6209 3.60577 1.39732C3.28147 1.14656 2.91419 1.01939 2.51422 1.01939Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_686_2785">
+                                            <rect width="9" height="9" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Add to wishlist</p>
+                            <div class="ms-1 bg-blue-400 p-2 rounded-full">
+                                <svg class="" width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.5141 6.39483C11.7709 6.75649 11.7709 7.24474 11.5141 7.60583C10.7054 8.74274 8.76515 11.0837 6.4999 11.0837C4.23465 11.0837 2.2944 8.74274 1.4857 7.60583C1.36078 7.43265 1.29297 7.21961 1.29297 7.00033C1.29297 6.78104 1.36078 6.568 1.4857 6.39483C2.2944 5.25791 4.23465 2.91699 6.4999 2.91699C8.76515 2.91699 10.7054 5.25791 11.5141 6.39483V6.39483Z"
+                                        stroke="white" stroke-width="1.29475" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M6.5 8.75C7.39746 8.75 8.125 7.9665 8.125 7C8.125 6.0335 7.39746 5.25 6.5 5.25C5.60254 5.25 4.875 6.0335 4.875 7C4.875 7.9665 5.60254 8.75 6.5 8.75Z"
+                                        stroke="white" stroke-width="1.29475" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Quick view</p>
+                            <div class="ms-1 bg-blue-400 p-2 rounded-full">
+                                <svg width="13" height="14" viewBox="0 0 9 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_686_2765)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.40625 6.5625C7.2322 6.5625 7.06528 6.63164 6.94221 6.75471C6.81914 6.87778 6.75 7.0447 6.75 7.21875C6.75 7.3928 6.81914 7.55972 6.94221 7.68279C7.06528 7.80586 7.2322 7.875 7.40625 7.875C7.5803 7.875 7.74722 7.80586 7.87029 7.68279C7.99336 7.55972 8.0625 7.3928 8.0625 7.21875C8.0625 7.0447 7.99336 6.87778 7.87029 6.75471C7.74722 6.63164 7.5803 6.5625 7.40625 6.5625ZM6.1875 7.21875C6.1875 6.89552 6.3159 6.58552 6.54446 6.35696C6.77302 6.1284 7.08302 6 7.40625 6C7.72948 6 8.03948 6.1284 8.26804 6.35696C8.4966 6.58552 8.625 6.89552 8.625 7.21875C8.625 7.54198 8.4966 7.85198 8.26804 8.08054C8.03948 8.3091 7.72948 8.4375 7.40625 8.4375C7.08302 8.4375 6.77302 8.3091 6.54446 8.08054C6.3159 7.85198 6.1875 7.54198 6.1875 7.21875Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.21437 0.645C5.26704 0.697735 5.29663 0.769219 5.29663 0.84375C5.29663 0.918281 5.26704 0.989765 5.21437 1.0425L4.75687 1.5H6.28125C6.65421 1.5 7.0119 1.64816 7.27562 1.91188C7.53934 2.1756 7.6875 2.53329 7.6875 2.90625V6.1875C7.6875 6.26209 7.65787 6.33363 7.60512 6.38637C7.55238 6.43912 7.48084 6.46875 7.40625 6.46875C7.33166 6.46875 7.26012 6.43912 7.20738 6.38637C7.15463 6.33363 7.125 6.26209 7.125 6.1875V2.90625C7.125 2.79545 7.10318 2.68573 7.06077 2.58336C7.01837 2.48099 6.95622 2.38798 6.87787 2.30963C6.79952 2.23128 6.70651 2.16913 6.60414 2.12673C6.50177 2.08432 6.39205 2.0625 6.28125 2.0625H4.75725L5.21475 2.52C5.26596 2.57307 5.29427 2.64413 5.2936 2.71787C5.29292 2.79161 5.26331 2.86214 5.21114 2.91426C5.15897 2.96638 5.08841 2.99593 5.01467 2.99653C4.94093 2.99714 4.86989 2.96876 4.81687 2.9175L3.87937 1.98C3.82671 1.92727 3.79712 1.85578 3.79712 1.78125C3.79712 1.70672 3.82671 1.63523 3.87937 1.5825L4.81687 0.645C4.86961 0.592331 4.94109 0.562747 5.01562 0.562747C5.09016 0.562747 5.16164 0.592331 5.21437 0.645ZM1.59375 2.4375C1.67993 2.4375 1.76527 2.42053 1.84489 2.38755C1.92451 2.35457 1.99685 2.30623 2.05779 2.24529C2.11873 2.18435 2.16707 2.11201 2.20005 2.03239C2.23303 1.95277 2.25 1.86743 2.25 1.78125C2.25 1.69507 2.23303 1.60973 2.20005 1.53011C2.16707 1.45049 2.11873 1.37815 2.05779 1.31721C1.99685 1.25627 1.92451 1.20793 1.84489 1.17495C1.76527 1.14197 1.67993 1.125 1.59375 1.125C1.4197 1.125 1.25278 1.19414 1.12971 1.31721C1.00664 1.44028 0.9375 1.6072 0.9375 1.78125C0.9375 1.9553 1.00664 2.12222 1.12971 2.24529C1.25278 2.36836 1.4197 2.4375 1.59375 2.4375ZM2.8125 1.78125C2.8125 2.10448 2.6841 2.41448 2.45554 2.64304C2.22698 2.8716 1.91698 3 1.59375 3C1.27052 3 0.960523 2.8716 0.731964 2.64304C0.503404 2.41448 0.375 2.10448 0.375 1.78125C0.375 1.45802 0.503404 1.14802 0.731964 0.919464C0.960523 0.690904 1.27052 0.5625 1.59375 0.5625C1.91698 0.5625 2.22698 0.690904 2.45554 0.919464C2.6841 1.14802 2.8125 1.45802 2.8125 1.78125Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.78563 8.355C3.73296 8.30227 3.70337 8.23078 3.70337 8.15625C3.70337 8.08172 3.73296 8.01023 3.78563 7.9575L4.24313 7.5H2.71875C2.34579 7.5 1.9881 7.35184 1.72438 7.08812C1.46066 6.8244 1.3125 6.46671 1.3125 6.09375V2.8125C1.3125 2.73791 1.34213 2.66637 1.39488 2.61363C1.44762 2.56088 1.51916 2.53125 1.59375 2.53125C1.66834 2.53125 1.73988 2.56088 1.79262 2.61363C1.84537 2.66637 1.875 2.73791 1.875 2.8125V6.09375C1.875 6.31753 1.9639 6.53214 2.12213 6.69037C2.28036 6.84861 2.49497 6.9375 2.71875 6.9375H4.24275L3.78525 6.48C3.7584 6.45404 3.73699 6.423 3.72227 6.38868C3.70754 6.35436 3.6998 6.31745 3.69949 6.2801C3.69919 6.24276 3.70632 6.20573 3.72048 6.17117C3.73464 6.13661 3.75554 6.10522 3.78195 6.07883C3.80837 6.05243 3.83979 6.03156 3.87436 6.01744C3.90893 6.00331 3.94597 5.99621 3.98331 5.99656C4.02065 5.9969 4.05756 6.00467 4.09186 6.01943C4.12617 6.03419 4.15719 6.05563 4.18313 6.0825L5.12063 7.02C5.17329 7.07273 5.20288 7.14422 5.20288 7.21875C5.20288 7.29328 5.17329 7.36477 5.12063 7.4175L4.18313 8.355C4.13039 8.40767 4.05891 8.43725 3.98438 8.43725C3.90984 8.43725 3.83836 8.40767 3.78563 8.355Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_686_2765">
+                                            <rect width="9" height="9" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Compare</p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="flex w-[717px] mt-5 h-[301px] bg-slate-100">
+                    <img class="w-[205px] h-[205px] ms-10 pt-10" src="/Assets/singleCart/image 49.png" alt="">
+
+                    <div class="ms-5 pt-6">
+                        <p class="text-xl text-black">Stylish Jacket for men</p>
+                        <p class="mt-3 text-black pr-5 text-xs w-[310px]">Quality in a product or service is not what
+                            the supplier puts in. it is what the customer gets out and is willing to pay for. A product
+                            is not quality because </p>
+                        <div class="flex">
+                            <div class="mt-3 flex">
+                                <div class="text-black">
+                                    <p>color</p>
+                                    <div class="flex mt-3">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md"></div>
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md ms-3"></div>
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full shadow-md ms-3"></div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-10 text-black">
+                                    <p>cloth Size</p>
+                                    <div class="flex mt-2 text-xs">
+                                        <p class="p-1 border border-slate-200">M</p>
+                                        <p class="p-1 border border-slate-200">L</p>
+                                        <p class="p-1 border border-slate-200">XL</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex mt-3">
+                            <p class="text-red-500">550tk</p>
+                            <button class="btn btn-info btn-sm ms-10">Add to Cart</button>
+                        </div>
+
+                        <div class="flex mt-3 text-black text-sm">
+                            <div class="bg-blue-400 p-2 rounded-full">
+                                <svg width="13" height="14" viewBox="0 0 9 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_686_2785)">
+                                        <path
+                                            d="M4.49999 8.4993C4.37186 8.4993 4.24834 8.45288 4.15207 8.36856C3.78849 8.05064 3.43796 7.75188 3.12869 7.48835L3.12711 7.48698C2.2204 6.71429 1.43742 6.04701 0.892637 5.38969C0.283653 4.65484 0 3.9581 0 3.19695C0 2.45744 0.253578 1.77518 0.713973 1.27579C1.17986 0.770485 1.81913 0.492188 2.51422 0.492188C3.03373 0.492188 3.50951 0.656433 3.92829 0.980324C4.13964 1.14381 4.33121 1.3439 4.49999 1.57729C4.66884 1.3439 4.86034 1.14381 5.07176 0.980324C5.49054 0.656433 5.96632 0.492188 6.48583 0.492188C7.18086 0.492188 7.82019 0.770485 8.28608 1.27579C8.74647 1.77518 8.99998 2.45744 8.99998 3.19695C8.99998 3.9581 8.7164 4.65484 8.10741 5.38962C7.56263 6.04701 6.77972 6.71423 5.87314 7.48684C5.56333 7.75079 5.21225 8.05003 4.84785 8.3687C4.75165 8.45288 4.62805 8.4993 4.49999 8.4993ZM2.51422 1.01939C1.96813 1.01939 1.46647 1.23734 1.10151 1.63312C0.731139 2.03487 0.527137 2.59023 0.527137 3.19695C0.527137 3.83711 0.765059 4.40964 1.29851 5.0533C1.81411 5.67547 2.58103 6.32902 3.46899 7.08577L3.47064 7.08714C3.78107 7.35171 4.13298 7.65163 4.49924 7.97189C4.86769 7.65102 5.22014 7.35061 5.53119 7.08563C6.41909 6.32888 7.18594 5.67547 7.70154 5.0533C8.23492 4.40964 8.47285 3.83711 8.47285 3.19695C8.47285 2.59023 8.26884 2.03487 7.89847 1.63312C7.53358 1.23734 7.03185 1.01939 6.48583 1.01939C6.0858 1.01939 5.71851 1.14656 5.39421 1.39732C5.1052 1.6209 4.90387 1.90352 4.78584 2.10127C4.72514 2.20296 4.6183 2.26366 4.49999 2.26366C4.38168 2.26366 4.27484 2.20296 4.21414 2.10127C4.09618 1.90352 3.89485 1.6209 3.60577 1.39732C3.28147 1.14656 2.91419 1.01939 2.51422 1.01939Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_686_2785">
+                                            <rect width="9" height="9" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Add to wishlist</p>
+                            <div class="ms-1 bg-blue-400 p-2 rounded-full">
+                                <svg class="" width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.5141 6.39483C11.7709 6.75649 11.7709 7.24474 11.5141 7.60583C10.7054 8.74274 8.76515 11.0837 6.4999 11.0837C4.23465 11.0837 2.2944 8.74274 1.4857 7.60583C1.36078 7.43265 1.29297 7.21961 1.29297 7.00033C1.29297 6.78104 1.36078 6.568 1.4857 6.39483C2.2944 5.25791 4.23465 2.91699 6.4999 2.91699C8.76515 2.91699 10.7054 5.25791 11.5141 6.39483V6.39483Z"
+                                        stroke="white" stroke-width="1.29475" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M6.5 8.75C7.39746 8.75 8.125 7.9665 8.125 7C8.125 6.0335 7.39746 5.25 6.5 5.25C5.60254 5.25 4.875 6.0335 4.875 7C4.875 7.9665 5.60254 8.75 6.5 8.75Z"
+                                        stroke="white" stroke-width="1.29475" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Quick view</p>
+                            <div class="ms-1 bg-blue-400 p-2 rounded-full">
+                                <svg width="13" height="14" viewBox="0 0 9 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_686_2765)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.40625 6.5625C7.2322 6.5625 7.06528 6.63164 6.94221 6.75471C6.81914 6.87778 6.75 7.0447 6.75 7.21875C6.75 7.3928 6.81914 7.55972 6.94221 7.68279C7.06528 7.80586 7.2322 7.875 7.40625 7.875C7.5803 7.875 7.74722 7.80586 7.87029 7.68279C7.99336 7.55972 8.0625 7.3928 8.0625 7.21875C8.0625 7.0447 7.99336 6.87778 7.87029 6.75471C7.74722 6.63164 7.5803 6.5625 7.40625 6.5625ZM6.1875 7.21875C6.1875 6.89552 6.3159 6.58552 6.54446 6.35696C6.77302 6.1284 7.08302 6 7.40625 6C7.72948 6 8.03948 6.1284 8.26804 6.35696C8.4966 6.58552 8.625 6.89552 8.625 7.21875C8.625 7.54198 8.4966 7.85198 8.26804 8.08054C8.03948 8.3091 7.72948 8.4375 7.40625 8.4375C7.08302 8.4375 6.77302 8.3091 6.54446 8.08054C6.3159 7.85198 6.1875 7.54198 6.1875 7.21875Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.21437 0.645C5.26704 0.697735 5.29663 0.769219 5.29663 0.84375C5.29663 0.918281 5.26704 0.989765 5.21437 1.0425L4.75687 1.5H6.28125C6.65421 1.5 7.0119 1.64816 7.27562 1.91188C7.53934 2.1756 7.6875 2.53329 7.6875 2.90625V6.1875C7.6875 6.26209 7.65787 6.33363 7.60512 6.38637C7.55238 6.43912 7.48084 6.46875 7.40625 6.46875C7.33166 6.46875 7.26012 6.43912 7.20738 6.38637C7.15463 6.33363 7.125 6.26209 7.125 6.1875V2.90625C7.125 2.79545 7.10318 2.68573 7.06077 2.58336C7.01837 2.48099 6.95622 2.38798 6.87787 2.30963C6.79952 2.23128 6.70651 2.16913 6.60414 2.12673C6.50177 2.08432 6.39205 2.0625 6.28125 2.0625H4.75725L5.21475 2.52C5.26596 2.57307 5.29427 2.64413 5.2936 2.71787C5.29292 2.79161 5.26331 2.86214 5.21114 2.91426C5.15897 2.96638 5.08841 2.99593 5.01467 2.99653C4.94093 2.99714 4.86989 2.96876 4.81687 2.9175L3.87937 1.98C3.82671 1.92727 3.79712 1.85578 3.79712 1.78125C3.79712 1.70672 3.82671 1.63523 3.87937 1.5825L4.81687 0.645C4.86961 0.592331 4.94109 0.562747 5.01562 0.562747C5.09016 0.562747 5.16164 0.592331 5.21437 0.645ZM1.59375 2.4375C1.67993 2.4375 1.76527 2.42053 1.84489 2.38755C1.92451 2.35457 1.99685 2.30623 2.05779 2.24529C2.11873 2.18435 2.16707 2.11201 2.20005 2.03239C2.23303 1.95277 2.25 1.86743 2.25 1.78125C2.25 1.69507 2.23303 1.60973 2.20005 1.53011C2.16707 1.45049 2.11873 1.37815 2.05779 1.31721C1.99685 1.25627 1.92451 1.20793 1.84489 1.17495C1.76527 1.14197 1.67993 1.125 1.59375 1.125C1.4197 1.125 1.25278 1.19414 1.12971 1.31721C1.00664 1.44028 0.9375 1.6072 0.9375 1.78125C0.9375 1.9553 1.00664 2.12222 1.12971 2.24529C1.25278 2.36836 1.4197 2.4375 1.59375 2.4375ZM2.8125 1.78125C2.8125 2.10448 2.6841 2.41448 2.45554 2.64304C2.22698 2.8716 1.91698 3 1.59375 3C1.27052 3 0.960523 2.8716 0.731964 2.64304C0.503404 2.41448 0.375 2.10448 0.375 1.78125C0.375 1.45802 0.503404 1.14802 0.731964 0.919464C0.960523 0.690904 1.27052 0.5625 1.59375 0.5625C1.91698 0.5625 2.22698 0.690904 2.45554 0.919464C2.6841 1.14802 2.8125 1.45802 2.8125 1.78125Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.78563 8.355C3.73296 8.30227 3.70337 8.23078 3.70337 8.15625C3.70337 8.08172 3.73296 8.01023 3.78563 7.9575L4.24313 7.5H2.71875C2.34579 7.5 1.9881 7.35184 1.72438 7.08812C1.46066 6.8244 1.3125 6.46671 1.3125 6.09375V2.8125C1.3125 2.73791 1.34213 2.66637 1.39488 2.61363C1.44762 2.56088 1.51916 2.53125 1.59375 2.53125C1.66834 2.53125 1.73988 2.56088 1.79262 2.61363C1.84537 2.66637 1.875 2.73791 1.875 2.8125V6.09375C1.875 6.31753 1.9639 6.53214 2.12213 6.69037C2.28036 6.84861 2.49497 6.9375 2.71875 6.9375H4.24275L3.78525 6.48C3.7584 6.45404 3.73699 6.423 3.72227 6.38868C3.70754 6.35436 3.6998 6.31745 3.69949 6.2801C3.69919 6.24276 3.70632 6.20573 3.72048 6.17117C3.73464 6.13661 3.75554 6.10522 3.78195 6.07883C3.80837 6.05243 3.83979 6.03156 3.87436 6.01744C3.90893 6.00331 3.94597 5.99621 3.98331 5.99656C4.02065 5.9969 4.05756 6.00467 4.09186 6.01943C4.12617 6.03419 4.15719 6.05563 4.18313 6.0825L5.12063 7.02C5.17329 7.07273 5.20288 7.14422 5.20288 7.21875C5.20288 7.29328 5.17329 7.36477 5.12063 7.4175L4.18313 8.355C4.13039 8.40767 4.05891 8.43725 3.98438 8.43725C3.90984 8.43725 3.83836 8.40767 3.78563 8.355Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_686_2765">
+                                            <rect width="9" height="9" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="ms-1 mt-1">Compare</p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <section class="mt-[80px] ms-[139px]">
+
+        <div class="flex">
+            <div class="border">
+                <p class="ms-[50px] mt-[30px] text-black">Related products</p>
+                <div class="ms-[40px] mr-[60px] mt-[30px] flex">
+                    <img class="w-[67px] h-[67px]" src="/Assets/categories/Rectangle 634.png" alt="">
+                    <div class="ms-5 mt-3 text-sm">
+                        <p>Iphone</p>
+                        <p class="mt-2">
+                            400tk
+                            <span class="line-through">550tk</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="ms-[40px] mr-[60px] mt-[30px] flex">
+                    <img class="w-[67px] h-[67px]" src="/Assets/categories/Rectangle 634.png" alt="">
+                    <div class="ms-5 mt-3 text-sm">
+                        <p>Iphone</p>
+                        <p class="mt-2">
+                            400tk
+                            <span class="line-through">550tk</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex border p-4 ms-5 w-[421px] h-[266px]">
+                <img class="w-[108px] h-[144px] mx-3 mt-12" src="/Assets/categories/image 65.png" alt="">
+                <div class="mx-3 text-black">
+                    <p class="text-xl mt-10">camera</p>
+                    <p class="mt-2 text-md">
+                        instax 16654956 mini 11 Camera, Sky Blue</p>
+                    <p class="mt-2 text-xl text-red-500">550tk</p>
+                    <div class="flex mt-2 text-sm">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <i class="fa fa-eye ms-2" aria-hidden="true"></i>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex border p-4 ms-3 w-[421px] h-[266px]">
+                <img class="w-[108px] h-[144px] mx-3 mt-12" src="/Assets/categories/image 65.png" alt="">
+                <div class="mx-3 text-black">
+                    <p class="text-xl mt-10">camera</p>
+                    <p class="mt-2 text-md">
+                        instax 16654956 mini 11 Camera, Sky Blue</p>
+                    <p class="mt-2 text-xl text-red-500">550tk</p>
+                    <div class="flex mt-2 text-sm">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <i class="fa fa-eye ms-2" aria-hidden="true"></i>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="mt-[90px] text-black">
+        <p class="text-black text-4xl ms-[137px]">New products</p>
+        <div class="ms-[160px] flex mt-10 p-5">
+            <div class="flex border border-t-2 border-r-2 p-4">
+                <img class="w-[52px] h-[56px] mx-2 mt-12" src="/Assets/image 17.png" alt="">
+                <div class="mx-2">
+                    <p class="text-sm">Shop</p>
+                    <p class="mt-2 text-sm">Oct 04 2021 <span class="text-md text-red-400">450Tk-500tk</span></p>
+                    <p class="mt-2 text-sm">Crystal authentic #24 Blue</p>
+                    <div class="flex mt-2 text-sm">
+                        <i class="text-amber-400 fa fa-star" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+
+                    </div>
+                    <button class="btn btn-error mt-2">view details</button>
+
+                </div>
+            </div>
+            <div class="flex border border-t-2 border-r-2 p-4">
+                <img class="w-[52px] h-[56px] mx-2 mt-12" src="/Assets/image 17.png" alt="">
+                <div class="mx-2">
+                    <p class="text-sm">Shop</p>
+                    <p class="mt-2 text-sm">Oct 04 2021 <span class="text-md text-red-400">450Tk-500tk</span></p>
+                    <p class="mt-2 text-sm">Crystal authentic #24 Blue</p>
+                    <div class="flex mt-2 text-sm">
+                        <i class="text-amber-400 fa fa-star" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+
+                    </div>
+                    <button class="btn btn-error mt-2">view details</button>
+
+                </div>
+            </div>
+            <div class="flex border border-t-2 border-r-2 p-4">
+                <img class="w-[52px] h-[56px] mx-2 mt-12" src="/Assets/image 17.png" alt="">
+                <div class="mx-2">
+                    <p class="text-sm">Shop</p>
+                    <p class="mt-2 text-sm">Oct 04 2021 <span class="text-md text-red-400">450Tk-500tk</span></p>
+                    <p class="mt-2 text-sm">Crystal authentic #24 Blue</p>
+                    <div class="flex mt-2 text-sm">
+                        <i class="text-amber-400 fa fa-star" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+
+                    </div>
+                    <button class="btn btn-error mt-2">view details</button>
+
+                </div>
+            </div>
+            <div class="flex border border-t-2 border-r-2 p-4">
+                <img class="w-[52px] h-[56px] mx-2 mt-12" src="/Assets/image 17.png" alt="">
+                <div class="mx-2">
+                    <p class="text-sm">Shop</p>
+                    <p class="mt-2 text-sm">Oct 04 2021 <span class="text-md text-red-400">450Tk-500tk</span></p>
+                    <p class="mt-2 text-sm">Crystal authentic #24 Blue</p>
+                    <div class="flex mt-2 text-sm">
+                        <i class="text-amber-400 fa fa-star" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+                        <i class="text-amber-400 fa fa-star ms-2" aria-hidden="true"></i>
+
+                    </div>
+                    <button class="btn btn-error mt-2">view details</button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <footer class="footer p-10 bg-slate-200 text-base-content">
+            <aside>
+                <img class="w-[222px] h-[49px]" src="/Assets/Group 1171274775.png" alt="">
+                <p>Corporate office 7th floor Al Hamra <br> Shopping City, Zindabazar, Sylhey -3100
+
+                </p>
+                <p>+88 012 345 678</p>
+                <p>support@deshimart.com</p>
+            </aside>
+            <nav class="mt-10">
+                <header class="footer-title">Services</header>
+                <a class="link link-hover">Bazar korun</a>
+                <a class="link link-hover">Amader dukan</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav class="mt-10">
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav class="mt-10">
+                <header class="footer-title">Legal</header>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+
+        </footer>
+        <hr class="my-1">
+        <footer class="footer items-center p-4 bg-slate-200 text-neutral-content">
+            <aside class="items-center grid-flow-col">
+
+                <p class="text-center">Copyright © 2023 - All right reserved</p>
+            </aside>
+            <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                    </svg>
+                </a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg></a>
+            </nav>
+        </footer>
+    </section>
+
+
+</body>
+
+</html>
+
+<script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js">
+    // TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com 
+    import { MultiRangeSlider, initTE } from "tw-elements";
+
+    initTE({ MultiRangeSlider });
+
+    const startValue = document.querySelector("#multi-range-start-values");
+    const startValueValues = document.querySelector(
+        "#multi-range-start-values-show"
+    );
+
+    startValue.addEventListener("valueChanged.te.multiRangeSlider", (e) => {
+        startValueValues.innerHTML = `
+Value:
+<span class="flex flex-col">
+  <div>First: ${e.values.rounded[0]}</div>
+  <div>Second  ${e.values.rounded[1]}</div>
+</span>
+`;
+    });
+
+</script>
